@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dilshan Andaramana | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fff);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #005f99;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #007acc;
+      color: white;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dilshan Andaramana</h1>
+    <p>BSc (Hons) Software Engineering (UG)</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#classes">ICT Classes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>I am an undergraduate software engineer with a passion for education and technology. I specialize in teaching students from Grades 6 to 9 how to use modern tools like AI in a fun and effective way.</p>
+    </div>
+  </section>
+
+  <section id="classes">
+    <div class="card">
+      <h2>ICT Classes</h2>
+      <ul>
+        <li>Grades: 6, 7, 8, 9</li>
+        <li>Learn AI, MS Word, Excel, PowerPoint</li>
+        <li>Practical, project-based learning</li>
+        <li>Focus on 21st-century skills</li>
+      </ul>
+      <p>Call/WhatsApp: <strong>077 144 7 888</strong></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0" />
+        <input type="email" id="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0" />
+        <textarea id="message" placeholder="Your Message" required style="width:100%; padding:10px; margin:10px 0"></textarea>
+        <button type="submit" style="padding:10px 20px; background:#007acc; color:white; border:none; border-radius:5px;">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dilshan Andaramana. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    }
+  </script>
+</body>
+</html>
